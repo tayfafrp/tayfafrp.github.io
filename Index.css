@@ -1,0 +1,94 @@
+*{padding: 0px ;
+  margin: 0px ;
+  }
+header, footer, nav, section, hgroup, aside, article {display: block; }
+  
+body{display: -webkit-box;
+       -webkit-box-orient: vertical;
+	   -webkit-box-pack: center;
+	   }
+	   
+#menuicon {width:36px;
+           height:36px;}
+		   
+#navhead {width:100%;
+             background-color:darkorange;}
+			
+#navbaslik {text-align:center;
+            color: white;}
+
+#kutucuk {display: none;}
+
+header label {
+	display:none;
+	width: 32px;
+	height: 32px;
+	padding: 10px;
+	border-right: 1px solid white;
+}
+
+header label:hover {
+	cursor:pointer;
+	background-color: rgba(0,0,0,0.3);
+} 
+
+.menu ul {
+	      margin: 0px;
+          padding: 0px;
+		  list-style:none;
+		  display: flex;
+          justify-content: center;
+		  }
+		  
+.menu li {border-right: 1px solid white;}
+
+.menu li:first-child {border-left: 1px solid white;}
+
+.menu li:hover {
+	 cursor:pointer;
+	 background-color: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+	display:block;
+	padding: 15px 20px;
+	color: white;
+    text-decoration:none ;
+    font-family:sans-serif;}
+
+@media (max-width:1980px) {
+	header label {display:block;
+	}
+	.menu {position:absolute;
+	       background-color: darkorange;
+		   width: 100%;
+		   margin-top: -100%;
+		   transition: all 0.55s;}
+	.menu ul {
+		flex-direction: column;
+	}
+	.menu li{border-top: 1px solid white;}
+  #kutucuk:checked ~ .menu {margin: 0px;}	
+}
+
+#section1 {display:block;}
+ 
+ h1, h2, h3{text-align: center;}
+ 
+ #tanitimfoot {text-align:right;
+               font-style: italic;}
+
+#div1 {display:-webkit-box;
+-webkit-box-flex: 1;
+ padding: 30px;}
+
+#paragraf1, #paragraf2, #paragraf3{justify-content:center;
+-webkit-box-flex: 1;
+display:block;
+}		 
+
+#foto1, #foto2 {width: 80%;
+                height:70%;
+                }
+				
+#dm {color:red;}
